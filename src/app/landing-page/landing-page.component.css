@@ -4,6 +4,7 @@
     "cabecera cabecera cabecera cabecera cabecera"
     "lateral-izquierdo cuerpo cuerpo cuerpo lateral-derecho"
     "pie pie pie pie pie";
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   gap: 15px;
   padding: 15px;
@@ -12,12 +13,13 @@
 .landing-page__cabecera {
   grid-area: cabecera;
   background-color: #e3f2fd;
-  padding: 20px;
+  padding: 15px;
   border: 2px solid #2196f3;
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
+  min-height: fit-content;
 }
 
 .landing-page__lateral-izquierdo {
@@ -28,6 +30,7 @@
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
+  min-height: 100%;
 }
 
 .landing-page__cuerpo {
@@ -38,6 +41,7 @@
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
+  min-height: 100%;
 }
 
 .landing-page__lateral-derecho {
@@ -48,15 +52,17 @@
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
+  min-height: 100%;
 }
 
 .landing-page__pie {
   grid-area: pie;
   background-color: #e8f5e9;
-  padding: 20px;
+  padding: 15px;
   border: 2px solid #4caf50;
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
+  min-height: fit-content;
 }
