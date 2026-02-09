@@ -1,0 +1,62 @@
+.landing-page {
+  display: grid;
+  grid-template-areas:
+    "cabecera cabecera cabecera cabecera cabecera"
+    "lateral-izquierdo cuerpo cuerpo cuerpo lateral-derecho"
+    "pie pie pie pie pie";
+  min-height: 100vh;
+  gap: 15px;
+  padding: 15px;
+}
+
+.landing-page__cabecera {
+  grid-area: cabecera;
+  background-color: #e3f2fd;
+  padding: 20px;
+  border: 2px solid #2196f3;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.landing-page__lateral-izquierdo {
+  grid-area: lateral-izquierdo;
+  background-color: #fff3e0;
+  padding: 20px;
+  border: 2px solid #ff9800;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.landing-page__cuerpo {
+  grid-area: cuerpo;
+  background-color: #f3e5f5;
+  padding: 20px;
+  border: 2px solid #9c27b0;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.landing-page__lateral-derecho {
+  grid-area: lateral-derecho;
+  background-color: #fff3e0;
+  padding: 20px;
+  border: 2px solid #ff9800;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.landing-page__pie {
+  grid-area: pie;
+  background-color: #e8f5e9;
+  padding: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
